@@ -14,8 +14,10 @@ test('make an uncompleted task', function(assert) {
 
   const expected = /*html*/`
     <li>
-      <input type="checkbox" />
-      <span>Learn JS</span>
+      <label>
+        <input type="checkbox" />
+        Learn JS
+      </label>
     </li>
   `;
   //Act 
@@ -35,8 +37,10 @@ test('make a completed task', function(assert) {
 
   const expected = /*html*/`
     <li>
-      <input type="checkbox" checked/>
-      <span>Learn JS</span>
+      <label>
+        <input type="checkbox" checked/>
+        Learn JS
+      </label>
     </li>
   `;
   //Act 
